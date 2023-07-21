@@ -10,10 +10,7 @@ function App() {
       <NavBar />
       <Routes>
 
-
-
         <Route path="/generate" element={<Generator/>} />
-
 
 
 
