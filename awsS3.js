@@ -1,5 +1,7 @@
-const secretKey = "AWSsecretkeyhere";
-const accessKey = "AWSaccesskeyhere";
+require('dotenv').config();
+
+const secretKey = process.env.REACT_APP_AWS_ACCESS_KEY;
+const accessKey = process.env.REACT_APP_AWS_SECRET_KEY;
 // // console.log(accessKey);
 // // console.log(secretKey);
 const AWS = require("aws-sdk");

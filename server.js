@@ -3,12 +3,13 @@ const axios = require('axios');
 const cors = require('cors');
 const { uploadToAWSWithURL, getUrlFromAwsWithKey } = require("./awsS3");
 
+require('dotenv').config();
 
 const { Configuration, OpenAIApi } = require("openai");
 
 
 const config_1 = new Configuration({
-  apiKey: "apikey here",
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
 });
 
 console.log(config_1);
